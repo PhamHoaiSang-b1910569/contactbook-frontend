@@ -21,6 +21,7 @@
         <button class="btn btn-sm btn-success" @click="goToAddContact">
           <i class="fas fa-plus"></i> Thêm mới
         </button>
+        
         <button class="btn btn-sm btn-danger" @click="removeAllContacts">
           <i class="fas fa-trash"></i> Xóa tất cả
         </button>
@@ -32,7 +33,7 @@
           Chi tiết Liên hệ
           <i class="fas fa-address-card"></i>
         </h4>
-        <ContactCard :contact="activeContact" />
+        
         <ContactCard :contact="activeContact" />
         <router-link
           :to="{
